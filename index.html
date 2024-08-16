@@ -218,7 +218,7 @@
     <div class="container mt-5">
       <div class="card p-5">
         <h1 class="card-header">NPTEL COURSE SELECTION</h1>
-        <form action="http://localhost:3005/submit" method="POST" onsubmit="setAndSubmitEmail()">
+        <form action="http://3.227.166.96:3005/submit" method="POST" onsubmit="setAndSubmitEmail()">
           <div class="form-group">
             <label for="email">EMAIL:</label>
             <input type="email" name="email" id="email" placeholder="Email Id" required pattern=".+@kongu\.edu$" title="Please enter a valid email ending with @kongu.edu">
@@ -296,7 +296,6 @@
             return pattern.test(email);
           }
         });
-  
         document.addEventListener("DOMContentLoaded", function () {
           const studentEmail = localStorage.getItem("studentEmail");
           const emailInput = document.getElementById("email");
