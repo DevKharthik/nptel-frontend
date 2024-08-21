@@ -155,6 +155,16 @@
     .course-details p.credit-text span {
         background-color: rgb(211, 211, 10);
     }
+    .code{
+        width: 250px;
+        height: 48px;
+        text-align: center;
+        line-height: 46px;
+        background-color: #74e57f;
+        border: 1px solid #000000;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+    }
     .message-container 
     {
             position: fixed;
@@ -206,7 +216,7 @@
     
 </head>
 <body>
-    <img class="background-image" src="summa.jpg" alt="">
+    <img class="background-image" src="kongu.jpg" alt="">
     <div class="text-container">
       <!-- <marquee behavior="scroll" direction="left" style="display: inline-block;">
         The maximum limit for the course is 60. Registration closes at 7:10pm :) Register soon.
@@ -225,9 +235,11 @@
             
             <label for="name">NAME:</label>
             <input type="text" id="name" name="name" required>
-            
             <label for="rollno">ROLLNO:</label>
-            <input type="text" id="rollno" name="rollno" required>
+            <div class="phone-container">
+                <div class="code">23CS</div>
+                <input type="text" id="rollno" name="rollno" required autocomplete="off">
+            </div>
             
             <label for="year">YEAR:</label>
             <select id="year" name="year">
